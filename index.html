@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Amu</title>
+    
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Valentine 💖</title>
+
+<style>
+
+body{
+  margin:0;
+  font-family:cursive;
+  background:#ffc0cb;
+  overflow:hidden;
+  text-align:center;
+}
+
+/* Common */
+.page{
+  width:100%;
+  height:100vh;
+  display:none;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+
+.active{
+  display:flex;
+}
+
+/* Floating Hearts */
+.heart{
+  position:absolute;
+  color:#ff69b4;
+  animation:float 6s linear infinite;
+}
+
+@keyframes float{
+  from{transform:translateY(100vh);}
+  to{transform:translateY(-100vh);}
+}
+
+/* Buttons */
+.btn{
+  padding:12px 25px;
+  font-size:18px;
+  border:none;
+  border-radius:20px;
+  margin:10px;
+  background:#ff1493;
+  color:white;
+  cursor:pointer;
+}
+
+/* Page 1 */
+#p1 img{
+  width:180px;
+}
+
+#noBtn{
+  position:relative;
+}
+
+/* Page 2 */
+#hug{
+  font-size:120px;
+}
+
+/* Page 4 */
+.bigHeart{
+  font-size:100px;
+  animation:beat 1s infinite;
+}<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Valentine 💖</title>
+
+<style>
+
+body{
+  margin:0;
+  font-family:cursive;
+  background:#ffc0cb;
+  overflow:hidden;
+  text-align:center;
+}
+
+/* Common */
+.page{
+  width:100%;
+  height:100vh;
+  display:none;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+
+.active{
+  display:flex;
+}
+
+/* Floating Hearts */
+.heart{
+  position:absolute;
+  color:#ff69b4;
+  animation:float 6s linear infinite;
+}
+
+@keyframes float{
+  from{transform:translateY(100vh);}
+  to{transform:translateY(-100vh);}
+}
+
+/* Buttons */
+.btn{
+  padding:12px 25px;
+  font-size:18px;
+  border:none;
+  border-radius:20px;
+  margin:10px;
+  background:#ff1493;
+  color:white;
+  cursor:pointer;
+}
+
+/* Page 1 */
+#p1 img{
+  width:180px;
+}
+
+#noBtn{
+  position:relative;
+}
+
+/* Page 2 */
+#hug{
+  font-size:120px;
+}
+
+/* Page 4 */
+.bigHeart{
+  font-size:100px
+
+@keyframes beat{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.2);}
+  100%{transform:scale(1);}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div class="page active" id="p1">
+
+
+<div id="hug">🫶🏻💐</div>
+  
+<h2>I always wanted you to ask this question dhinglaa and aage bhi puchta rahunga bhale reply yess hi ho </h2>
+
+<h2>So miss kahu ya doctor🤔</h2>
+<h2>Dr Drashti Patel</h2>
+<h2>Will you be my valentines👉🏻👈🏻??</h2>
+<h5>(Thak mat jana no click karte karte😚)</h5>
+<div>
+<button class="btn" onclick="next(2)">Yes 💘</button>
+<button class="btn" id="noBtn" onmouseover="moveNo()">No 😜</button>
+</div>
+
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="p2">
+
+<div id=>🥳🥳</div>
+
+<h2>Thankyou so so so much for accepting my proposal 💞</h2>
+
+<button class="btn" onclick="next(3)">Question time..</button>
+
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="p3">
+
+<h3>
+Now That You've Become My Valentine Again 💖<br>
+Here Are Some Obvious Questions for which you cant say no ofcourse 😈🐥
+</h3>
+
+<p>1. Will You Annoy Me Forever?</p>
+
+<button class="btn">✅ Yes Yeh Bhi Koi Puchne Ki Baat Hai</button>
+<button class="btn" onmouseover="moveQ(this)">❌ Mai Nahi Kar Rahi</button>
+
+<p>2. Will You Love Me Even When I'm Irritating ?</p>
+
+<button class="btn">✅ Always mere sade hue chuhe😚</button>
+<button class="btn" onmouseover="moveQ(this)">❌ Itni acchi nai hu mai</button>
+
+<p>3. Will You go on cute dates with me?</p>
+
+<button class="btn">✅ Yes ofcourse 😚</button>
+<button class="btn" onmouseover="moveQ(this)">❌ mujhe to sirf khane se matlab hai</button>
+
+<p>4. Will You Stay With Me Forever?</p>
+
+<button class="btn" onclick="next(4)">✅Forever 😚</button>
+<button class="btn" onmouseover="moveQ(this)">❌ Maybe, lekin aage badhne ke liye forever select karna padega</button>
+
+<br>
+
+
+</div>
+
+<!-- PAGE 4 -->
+<div class="page" id="p4">
+
+<div class="bigHeart">❤️</div>
+
+<h2>HAPPY VALENTINE’S DAY 💖</h2>
+<h2>MY BUTTERFLY🦋✨</h2>
+<h1>I LOVE YOU THE MOST SWEETHEART🫂💞</h1>
+
+</div>
+
+
+<script>
+
+/* Page Switch */
+function next(n){
+  document.querySelectorAll('.page').forEach(p=>{
+    p.classList.remove('active');
+  });
+
+  document.getElementById("p"+n).classList.add("active");
+}
+
+/* No Button Move */
+function moveNo(){
+  let btn=document.getElementById("noBtn");
+
+  let x=Math.random()*200-100;
+  let y=Math.random()*200-100;
+
+  btn.style.transform=`translate(${x}px,${y}px)`;
+}
+
+/* Question Move */
+function moveQ(btn){
+
+  let x=Math.random()*300-150;
+  let y=Math.random()*200-100;
+
+  btn.style.transform=`translate(${x}px,${y}px)`;
+}
+
+/* Floating Hearts */
+for(let i=0;i<30;i++){
+
+  let h=document.createElement("div");
+  h.className="heart";
+  h.innerHTML="💗";
+
+  h.style.left=Math.random()*100+"%";
+  h.style.fontSize=(15+Math.random()*15)+"px";
+  h.style.animationDuration=(4+Math.random()*4)+"s";
+
+  document.body.appendChild(h);
+}
+
+</script>
+
+</body>
+</html>
+    
+  </body>
+  
+</html>
